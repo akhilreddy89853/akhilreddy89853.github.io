@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>My home page</title>
         <style>
             body {
@@ -15,51 +16,96 @@
                     margin:10px;
                     padding:10px;
             }
-            ul {
-                  list-style-type: none;
-                  margin: 0;
-                  padding: 0;
-                  overflow: hidden;
-                  border: 1px solid #e7e7e7;
-                  background-color: #f3f3f3;
-                }
+            
+            .navbar {
+  overflow: hidden;
+  background-color: #333;
+}
 
-                li {
-                  float: left;
-                }
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-                li a {
-                  display: block;
-                  color: #666;
-                  text-align: center;
-                  padding: 14px 16px;
-                  text-decoration: none;
-                }
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
-                li a:hover:not(.active) {
-                  background-color: #ddd;
-                }
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 
-                li a.active {
-                  color: white;
-                  background-color: #4CAF50;
-                }
-            td {
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+            
+              td {
                 padding: 100px;
                 margin: 20px;
             }
-      </style>
+            
+                 </style>
     </head>
-    <body>
+    <body>y 
         <div class = "Style">
-            <h1 class = "pa">AxiomIO.com</h1>
+           <a href="http://axiomio.com"> <h1 class = "pa">AxiomIO.com</h1></a>
         </div>
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#">Study</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
+       
+         <div class="navbar">
+          <a href="file:///F:/htmlfiles/frontpage.html">Home</a>
+          <a href="#news">About</a>
+          <div class="dropdown">
+            <button class="dropbtn">Videos 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="https://www.youtube.com/watch?v=UkrhNJ0OyVs">Use Your brains</a>
+              <a href="https://www.coursera.org/learn/build-a-computer?">nand2tetris</a>
+              <a href="https://www.coursera.org/learn/learning-how-to-learn?">Learn How to Learn</a>
+            </div>
+          </div> 
+          <a href="https://github.com/rohinibarla/FOC">FOC</a>
+        </div>
+        
+        
         <table>
             
             <tr>
